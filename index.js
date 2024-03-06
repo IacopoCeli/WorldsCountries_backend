@@ -104,4 +104,4 @@ app.get('/WorldCurrencies', (req, res) => {
 
 app.all('*', (req, res) => { res.send(MakeResponseJsonMessage(0, 'Invalid route path!')) })
 
-app.listen(8081);
+app.listen(process.env.PORT || 8081);
